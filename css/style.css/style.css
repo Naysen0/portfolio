@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap')
+
+:root{
+	--yellow:#f9ca24;
+}
+
+*{
+	 font-family: "Kode Mono", monospace;
+	 margin: 0;padding: 0;
+	 box-sizing: border-box;
+	 text-decoration: none; 
+	 outline: none ;border: none;
+	 text-transform: capitalize;
+	 transition: all .2s linear;
+}
+
+*::selection{
+	background:var(--yellow);
+	color: #333;
+}
+
+html{
+	font-size:62.5%;
+
+	/*permet de définir les mécanismes à utiliser lorsque le contenu dépasse les bords
+	 droit et gauche de la boîte de contenu. Voici les valeurs possibles pour cette propriété */
+
+	/*Le contenu est rogné pour tenir horizontalement dans la boîte de remplissage (padding box),                                                               
+	et aucun ascenseur horizontal n’est affiché. Cela masque la barre de défilement, mais l’élément 
+	reste toujours défilable via JavaScript*/
+
+	overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+
+} 
+
+
